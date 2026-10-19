@@ -7,11 +7,12 @@
 -- Banco de Dados .........: Oracle
 -- Base de Dados (nome) ...: VRVR
 --
--- PROJETO => 02 Sequences, 
---            04 Tabelas 
+-- PROJETO => 04 Sequences, 
+--            08 Tabelas 
 --            01 Visao (View)
 --
 -- ULTIMAS ATUALIZACOES
+--  18/10/2026 => Adição do drop das tabelas e sequences referentes a PARTE 1 (Pessoa, Perfis, Areas).
 --  02/10/2026 => Migracao da solucao do MySQL 8.0 para Oracle APEX.
 --             => Implementacao exclusiva da PARTE 2 (Vendas, Itens de Venda, Produtos).
 --             => Substituicao de AUTO_INCREMENT por SEQUENCE (G8_SEQ_PRODUTO e G8_SEQ_VENDA).
@@ -23,8 +24,14 @@
 DROP TABLE G8_CONTEM CASCADE CONSTRAINTS;
 DROP TABLE G8_VENDA CASCADE CONSTRAINTS;
 DROP TABLE G8_PRODUTO CASCADE CONSTRAINTS;
+DROP TABLE G8_telefone CASCADE CONSTRAINTS;
 DROP TABLE G8_EMPREGADO CASCADE CONSTRAINTS;
+DROP TABLE G8_AREA CASCADE CONSTRAINTS;
+DROP TABLE G8_GERENTE CASCADE CONSTRAINTS;
+DROP TABLE G8_PESSOA CASCADE CONSTRAINTS;
 
 -- 2. REMOCAO DE SEQUENCES
+DROP SEQUENCE G8_SEQ_CODAREA_AREA;
+DROP SEQUENCE G8_SEQ_MATRICULA_EMPREGADO;
 DROP SEQUENCE G8_SEQ_VENDA;
 DROP SEQUENCE G8_SEQ_PRODUTO;

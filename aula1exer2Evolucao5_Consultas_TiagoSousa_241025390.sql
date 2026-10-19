@@ -7,8 +7,8 @@
 -- Banco de Dados .........: Oracle
 -- Base de Dados (nome) ...: VRVR
 --
--- PROJETO => 02 Sequences, 
---            04 Tabelas 
+-- PROJETO => 04 Sequences, 
+--            08 Tabelas 
 --            01 Visao (View)
 --
 -- ULTIMAS ATUALIZACOES
