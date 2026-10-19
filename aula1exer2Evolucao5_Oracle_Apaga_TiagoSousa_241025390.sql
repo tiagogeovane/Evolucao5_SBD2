@@ -18,9 +18,13 @@
 --             => Substituicao de AUTO_INCREMENT por SEQUENCE (G8_SEQ_PRODUTO e G8_SEQ_VENDA).
 --             => Adequacao de tipos de dados para padrao Oracle (VARCHAR2, NUMBER).
 --             => Aplicacao de assinatura G8_ em todos os identificadores de objetos.
+--             => Adição da Remoção de View ao script
 -- -----------------------------------------------------------------
+-- 1. REMOCAO DE VISOES (VIEWS)
+DROP VIEW G8_VW_QTD_VENDIDA_PRODUTO;
 
--- 1. REMOCAO DE TABELAS (Ordem reversa de dependencia de FK)
+
+-- 2. REMOCAO DE TABELAS (Ordem reversa de dependencia de FK)
 DROP TABLE G8_CONTEM CASCADE CONSTRAINTS;
 DROP TABLE G8_VENDA CASCADE CONSTRAINTS;
 DROP TABLE G8_PRODUTO CASCADE CONSTRAINTS;
@@ -30,7 +34,7 @@ DROP TABLE G8_AREA CASCADE CONSTRAINTS;
 DROP TABLE G8_GERENTE CASCADE CONSTRAINTS;
 DROP TABLE G8_PESSOA CASCADE CONSTRAINTS;
 
--- 2. REMOCAO DE SEQUENCES
+-- 3. REMOCAO DE SEQUENCES
 DROP SEQUENCE G8_SEQ_CODAREA_AREA;
 DROP SEQUENCE G8_SEQ_MATRICULA_EMPREGADO;
 DROP SEQUENCE G8_SEQ_VENDA;
